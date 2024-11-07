@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart_page.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+
+            <!-- For Hamburger -->
+            <a href="#" class="hamburger">
+                <img src="menu.svg">
+            </a> 
+    
+            <a href="http://127.0.0.1:5500/home_page.html" id="title"> S H O P </a>
+    
+            <a href="#" class="cart"> 
+                <img src="cart.svg">
+            </a>
+
+        </div>
+        
+    </header>
+
+    <div class="main-container">
+        <div class="subsection">
+
+            <div class="heading">
+                <p id="cart" style="font-size: 16px;">Your Cart</p>
+                <p id="items">(3 items)</p>
+            </div>
+
+            <div class="list">
+
+                <div class="cart-item">
+                    <a href="#"> <img src="mens_outerwear_images/image1.jpg" alt="" id="cart-image"> </a>
+                    <div class="flex">
+                        <div class="name">
+                            <a href="#">Men's Tech Shell Full-Zip</a>
+                            <!-- <p>x</p> -->
+                            <img src="x-mark.svg" alt="">
+                        </div>
+
+                        <div class="detail">
+                            <div class="quantity">
+                                <label>Qty:</label>
+                                <select id="quantitySelect" aria-label="Change quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="size">Size: <span>M</span></div>
+                            <div class="price">$50.20</div>
+                            <img src="x-mark.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <a href="#"> <img src="mens_outerwear_images/image2.jpg" alt="" id="cart-image"> </a>
+                    <div class="flex">
+                        <div class="name">
+                            <a href="#">Anvil L/S Crew Neck</a>
+                            <!-- <p>x</p> -->
+                            <img src="x-mark.svg" alt="">
+                        </div>
+
+                        <div class="detail">
+                            <div class="quantity">
+                                <label>Qty:</label>
+                                <select id="quantitySelect" aria-label="Change quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="size">Size: <span>M</span></div>
+                            <div class="price">$22.15</div>
+                            <img src="x-mark.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <a href="#"> <img src="mens_outerwear_images/image3.jpg" alt="" id="cart-image"> </a>
+                    <div class="flex">
+                        <div class="name">
+                            <a href="#">Green Flex Fleece Zip Hoodie</a>
+                            <!-- <p>x</p> -->
+                            <img src="x-mark.svg" alt="">
+                        </div>
+
+                        <div class="detail">
+                            <div class="quantity">
+                                <label>Qty:</label>
+                                <select id="quantitySelect" aria-label="Change quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="size">Size: <span>M</span></div>
+                            <div class="price">$45.65</div>
+                            <img src="x-mark.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="checkout-box">
+                Total: <span class="subtotal">$118.00</span>
+                
+                <button>CHECKOUT</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check_out</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="menu-container">
+    <div class="menu-icon">
+      <input type="checkbox" id="check">
+      <label for="check">
+        <a href="Mens_outwear.html"> <i style='font-size:24px' class='fas'>&#xf060;</i></a>
+      </label>
+      <!-- <div class="menu-list">
+        <ul>
+            <li><a href="Mens_outwear.html">Men's Outerwear</a></li>
+            <li><a href="Womans_outwear.html">Women's Outerwear</a></li>
+            <li><a href="#">Men's T Shirts</a></li>
+            <li><a href="#">Ladie's T Shirts</a></li>
+        </ul>
+    </div> -->
+    </div>
+    <div class="home"><a href="home.html">SHOP</a></div>
+    <div class="cart-icon">
+      <i style="font-size:24px" class="fa">&#xf07a;</i>
+    </div>
+    <!-- </div>
+<div class="desktop-menu-list">
+    <a class="underscore" href="Mens_outwear.html">Men's Outerwear</a>
+    <a href="Womans_outwear.html">Women's Outerwear</a>
+    <a href="#">Men's T Shirts</a>
+    <a href="#">Ladie's T Shirts</a>
+
+</div> -->
+  </div>
+  <main class="main-frame">
+    <div class="heading-container">
+      <h1>Checkout</h1>
+      <span>Shop is a demo app-form data will not be sent</span>
+    </div>
+    <form class="form-container">
+      <section>
+        <h2 class="accountInfoHeading">Account Information</h2>
+        <div class="text-input">
+          <input type="email" class="changed" id="changed" placeholder=" " />
+          <label for="changed" class="label">Email</label>
+        </div>
+        <div class="text-input">
+          <input type="tel" class="changed" id="phone" placeholder=" " />
+          <label for="phone" class="label">Phone Number</label>
+        </div>
+        <h2 class="accountInfoHeading">Shipping Addresss</h2>
+        <div class="text-input">
+          <input type="text" class="changed" id="Addresss" placeholder=" " />
+          <label for="Addresss" class="label">Address</label>
+        </div>
+        <div class="text-input">
+          <input type="text" class="changed" id="city" placeholder=" " />
+          <label for="city" class="label">City</label>
+        </div>
+        <div class="flexing">
+          <div class="text-input">
+            <input type="text" class="changed" id="state" placeholder=" " />
+            <label for="state" class="label">State/Province</label>
+          </div>
+          <div class="gap"></div>
+          <div class="text-input">
+            <input type="text" class="changed" id="pin-code" placeholder=" " />
+            <label for="pin-code" class="label">ZIP/Postal Code</label>
+          </div>
+        </div>
+        <div class="column">
+          <label id="shipCountryLabel" class="shop-select-label">Country</label>
+          <select id="shipCountry" name="shipCountry">
+            <option value="US" selected="">United States</option>
+            <option value="CA">Canada</option>
+          </select>
+        </div>
+        <h2 class="accountInfoHeading">Billing Addresss</h2>
+        <div class="billing-address-picker">
+          <input type="checkbox" id="setBilling" name="setBilling">
+          <label for="setBilling" class="billing-address">Use different billing address</label>
+        </div>
+        <div id="billed">
+          <div class="text-input">
+            <input type="text" class="changed" id="Addresss" placeholder=" " />
+            <label for="Addresss" class="label">Address</label>
+          </div>
+          <div class="text-input">
+            <input type="text" class="changed" id="city" placeholder=" " />
+            <label for="city" class="label">City</label>
+          </div>
+          <div class="flexing">
+            <div class="text-input">
+              <input type="text" class="changed" id="state" placeholder=" " />
+              <label for="state" class="label">State/Province</label>
+            </div>
+            <div class="gap"></div>
+            <div class="text-input">
+              <input type="text" class="changed" id="pin-code" placeholder=" " />
+              <label for="pin-code" class="label">ZIP/Postal Code</label>
+            </div>
+          </div>
+          <div class="column">
+            <label id="shipCountryLabel" class="shop-select-label">Country</label>
+            <select id="shipCountry" name="shipCountry">
+              <option value="US" selected="">United States</option>
+              <option value="CA">Canada</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section class="payment">
+        <h2 class="accountInfoHeading">Payment Method</h2>
+        <div class="text-input">
+          <input type="email" class="changed" id="changed" placeholder=" " />
+          <label for="changed" class="label">Card Holder</label>
+        </div>
+        <div class="text-input">
+          <input type="tel" class="changed" id="phone" placeholder=" " />
+          <label for="phone" class="label">Card Number</label>
+        </div>
+        <div class="column">
+          <label id="expiry" class="shop-select-label">Expiry</label>
+          <div class="flexing">
+            <div class="text-input">
+              <select id="month" name="shipCountry">
+                <option value="JAN">JAN</option>
+                <option value="FEB">FEB</option>
+                <option value="MAR">MAR</option>
+                <option value="APR">APR</option>
+                <option value="JUN">JUN</option>
+                <option value="JUL">JUL</option>
+                <option value="AUG">AUG</option>
+                <option value="SEP">SEP</option>
+                <option value="OCT">OCT</option>
+                <option value="NOV">NOV</option>
+                <option value="DEC">DEC</option>
+              </select>
+            </div>
+            <div class="gap"></div>
+            <div class="text-input">
+              <select id="year" name="shipCountry">
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+              </select>
+            </div>
+            <div class="gap"></div>
+            <div class="text-input">
+              <input type="tel" class="changed" id="CVV" placeholder=" " />
+              <label for="cvv" class="label">CVV</label>
+            </div>
+          </div>
+        </div>
+        <h2 class="">Order Summary</h2>
+        <div class="Summary">
+          <div class="order-name">Men's Tech Shell Full-Zip</div>
+          <div class="order-name">$50.20</div>
+        </div>
+        <div class="Summary">
+          <div class="order-name">Total</div>
+          <div class="order-name">$50.20</div>
+        </div>
+        <!-- <div class="gap"></div> -->
+        <div class="place-order1">
+          <button>PLACE ORDER</button>
+        </div>
+        <!-- <div class="shop-btn-container">
+          <button class="shop-btn" href="./Men-Tshirts.html">PLACE ORDER</button>
+        </div> -->
+        <!-- </div> -->
+      </section>
+      
+    </form>
+  </main>
+  <!-- <footer>
+    <p>Made By Polymer</p>
+    <button>Demo Only</button>
+  </footer> -->
+  <div class="gap"></div>
+  <div class="place-order">
+    <button>PLACE ORDER</button>
+  </div>
+  
+
+</body>
+
+</html>
