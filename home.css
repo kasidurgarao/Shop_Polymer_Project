@@ -857,6 +857,9 @@ footer button {
         margin-left: 30px;
         
     }
+    .cart-button button a{
+        color: #000;
+     }
     .add-cart .description > h2{
         font-size: 12px;
     }
